@@ -86,10 +86,6 @@
                             <constraint firstItem="3Le-QZ-NoL" firstAttribute="top" secondItem="hwf-U8-7kr" secondAttribute="bottom" id="vGc-4M-fhi"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="bgImg" destination="2Az-EV-fgm" id="sY0-CN-fPH"/>
-                        <outlet property="swoosh" destination="aCf-OK-IPM" id="YfQ-Yb-PTa"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -172,6 +168,9 @@
                                 <state key="normal" title="NEXT">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="15P-hK-NoA" eventType="touchUpInside" id="etz-jY-lXv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fch-ha-BDo">
                                 <rect key="frame" x="16" y="30" width="44" height="33"/>
@@ -204,6 +203,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="NYJ-dM-j0l" secondAttribute="trailing" id="mAC-kw-xio"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="eu9-7F-y9a" kind="show" identifier="skillVCSegue" id="NKU-Px-TRY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y28-Yp-QMz" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="u6f-ae-obR" userLabel="Exit" sceneMemberID="exit"/>
